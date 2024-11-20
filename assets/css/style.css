@@ -6156,6 +6156,32 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   list-style: none;
 }
 
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 9999;
+}
+
+#popup img {
+  max-width: 100%;
+  height: auto;
+}
+
+#close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
 /* ----------------------------------------
   Header Searchbox
 ---------------------------------------- */

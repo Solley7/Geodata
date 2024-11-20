@@ -39,12 +39,16 @@ body {
 h1::first-letter,
 h2::first-letter,
 h3::first-letter,
-h4::first-letter,
 h5::first-letter,
 h6::first-letter {
   color: red;
 }
-
+h4 span {
+  display: inline-block;
+}
+h4 span::first-letter {
+  color: red;
+}
 .bg-dark h1,
 .bg-dark h2,
 .bg-dark h3,
@@ -101,11 +105,7 @@ ul {
   padding: 0;
   margin: 0;
 }
-p,
-li,
-a,
-span {
-}
+
 p {
   font-size: 16px;
   line-height: 26px;
@@ -742,7 +742,7 @@ video {
   color: white;
 }
 .widget-content span {
-  display: block;
+  display: inline-block;
   color: white;
 }
 .widget-content .widget-links {
