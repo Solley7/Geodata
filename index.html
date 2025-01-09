@@ -1124,11 +1124,32 @@
     <!-- TESTIMONIAL AREA END -->
 
     <!-- BRAND LOGO AREA START -->
-    <div id="popup" style="display: none;">
-      <img src="https://geodata-wsl.s3.us-east-1.amazonaws.com/NOVEMBER+DESIGN+1+B.jpgs" alt="Popup Image">
-      <button id="close-popup">Close</button>
-    </div>
+    <div id="popup" class="popup">
+      <img src="https://geodata-wsl.s3.us-east-1.amazonaws.com/flyer+for+website.webp" alt="Flyer Image">
+      <a href="#" class="close-button">x</a>
+  </div>
 
+  <script>
+    window.onload = function() {
+        document.getElementById('popup').style.display = 'block'; 
+    };
+
+    document.querySelector('.close-button').addEventListener('click', function(event) {
+        event.preventDefault();
+        closePopup();
+    });
+
+    document.addEventListener('click', function(event) {
+        if (event.target === document.getElementById('popup')) {
+            return; // Do nothing if the click is within the popup
+        }
+        closePopup(); 
+    });
+
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+</script>
     <!-- BRAND LOGO AREA END -->
 
     <!-- BLOG AREA START (blog-3) -->
