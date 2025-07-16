@@ -9016,7 +9016,24 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   color: var(--white);
   border-color: var(--ltn__secondary-color);
 }
+.floats{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom: 140px;
+	right:3%;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
 
+.my-float{
+	margin-top:16px;
+}
 .button-1 a {
   display: inline-block;
   padding: 5px 15px;
